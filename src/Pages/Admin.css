@@ -1,0 +1,304 @@
+.createTestPageMain {
+  background-image: linear-gradient(to bottom right, #fdfbfb, #ebedee, #fad0c4);
+  height: 100vh;
+}
+.editTestMainDiv {
+  background-image: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  height: 120vh;
+}
+.editNote {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Tilt Warp", cursive;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: green;
+}
+.classSvg {
+  width: 30%;
+  margin: auto;
+}
+.classSvg img {
+  width: 100%;
+}
+.btn-create {
+  text-align: center;
+}
+.css-button-arrow--black {
+  text-align: center;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #343a40;
+}
+.css-button-arrow--black:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.css-button-arrow--black:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.css-button-arrow--black:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+.create-form {
+  width: 70%;
+  margin: auto;
+  padding: 2rem;
+
+  border-radius: 0.5rem;
+}
+.InputSubmitBtn {
+  margin-top: 1rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #18bb5c;
+}
+.InputSubmitBtn:hover {
+  background-color: #1ea566;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.create-form input,
+select {
+  height: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.edit-form input,
+select {
+  height: 3rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.edit-form {
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.edit-form form div span {
+  font-weight: 600;
+}
+.edit-form form div textarea {
+  width: 100%;
+}
+.create-form span {
+  font-weight: 500;
+}
+
+.add-class-grid {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  background-color: white;
+  margin-top: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.edit-class-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: -3rem;
+}
+.createClassImgDiv {
+  width: 100%;
+  margin: auto;
+}
+.edit-class-grid .visibleImg img {
+  width: 100%;
+}
+.hiddenImg {
+  display: none;
+}
+.add-class-grid img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.deleteBtn {
+  position: sticky;
+  color: rgb(201, 39, 39);
+  font-size: 2rem;
+  margin-left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.deleteBtn :hover {
+  color: red;
+  cursor: pointer;
+}
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 10%;
+  top: 50%;
+  font-size: 17px;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: slide-up 0.5s ease-in-out forwards,
+    slide-down 0.5s ease-in-out forwards 1s;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .classSvg {
+    width: 50%;
+    margin: auto;
+  }
+  .edit-form {
+    width: 60%;
+  }
+  .create-form {
+    width: 70%;
+  }
+  .add-class-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .edit-class-grid {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .edit-class-grid .visibleImg img {
+    display: none;
+  }
+  .edit-class-grid .hiddenImg {
+    display: block;
+  }
+  .edit-class-grid .hiddenImg img {
+    width: 100%;
+  }
+  .createClassImgDiv img {
+    width: 60%;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .classSvg {
+    width: 60%;
+    margin: auto;
+  }
+  .create-form {
+    width: 85%;
+  }
+  .add-class-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .edit-class-grid {
+    margin-top: 0rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .edit-class-grid .visibleImg img {
+    display: none;
+  }
+  .edit-class-grid .hiddenImg {
+    display: block;
+  }
+  .edit-class-grid .hiddenImg img {
+    width: 100%;
+  }
+  .createClassImgDiv img {
+    width: 50%;
+    margin-left: 4rem;
+  }
+  .createTestPageMain {
+    background-image: linear-gradient(
+      to bottom right,
+      #fdfbfb,
+      #fad0c4,
+      #ebedee
+    );
+    height: 125vh;
+  }
+  #toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 60%;
+    font-size: 17px;
+  }
+
+  #toast.show {
+    visibility: visible;
+    animation: slide-up 0.5s ease-in-out forwards,
+      slide-down 0.5s ease-in-out forwards 1s;
+  }
+  .deleteBtn {
+    margin-left: 0.3rem;
+  }
+  .editTestMainDiv {
+    height: auto;
+    padding-bottom: 0.2rem;
+  }
+}

@@ -1,0 +1,256 @@
+.mainDivTest {
+  background-color: #f6f8fa;
+  height: 100dvh;
+}
+.singleTestMainDiv {
+  background-image: linear-gradient(to bottom right, #dbdfe0, #f6f8fa, #dbdfe0);
+  padding-bottom: 2rem;
+}
+.main-cards-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  width: 95%;
+  margin: auto;
+  padding: 1rem;
+}
+h2 {
+  text-align: center;
+  margin: 1rem;
+  font-family: sans-serif;
+}
+.test-card {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  background-image: linear-gradient(to bottom right, #ebedee, #fdfbfb);
+}
+.test-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+.test-card-name {
+  font-size: larger;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: white;
+}
+.test-card-section {
+  font-size: medium;
+  margin-top: 0.5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.test-card .imgDiv {
+  width: 25%;
+  margin: -15% 10% 10% 70%;
+}
+.test-card-subject {
+  padding: 1rem;
+}
+.upper-test-card {
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.imgDiv img {
+  width: 100%;
+  border-radius: 100%;
+}
+.subject-div {
+  border-top: solid 1px #ccc;
+}
+
+.loader-gif {
+  margin: auto;
+  width: 10%;
+}
+.loader-gif img {
+  width: 100%;
+}
+
+.test-heading {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1rem;
+  background-image: linear-gradient(to bottom right, #ffafbd, #f1c7ae, #ffc3a0);
+  border-radius: 0.5rem;
+}
+.test-heading div p {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Tilt Warp", cursive;
+  letter-spacing: 0.5rem;
+}
+.test-heading div div {
+  height: 80%;
+}
+.test-heading div img {
+  width: 80%;
+}
+.single-test-body {
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 1px #ccc;
+  background-color: white;
+}
+.single-test-loading {
+  margin: 0 auto;
+  width: 20%;
+}
+.single-test-loading img {
+  width: 100%;
+}
+
+.single-test-notes {
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 1px #ccc;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+.single-test-notes div {
+  border: solid 1px #ccc;
+}
+.single-test-notes div p {
+  font-weight: bold;
+  padding: 1rem;
+}
+.single-test-notes div img {
+  width: 100%;
+}
+.deleteDiv {
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+.deleteDiv img {
+  width: 100%;
+  margin: auto;
+}
+.editTest {
+  position: relative;
+  margin: -4% 12% 0 82%;
+  font-size: xx-large;
+  background-color: #ccc;
+  border: solid #bbb8b8 0.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+.editTest:hover {
+  background-color: rgb(133, 211, 133);
+  color: white;
+  border: solid rgb(92, 192, 92) 0.5rem;
+  border-inline-end-color: rgb(41, 148, 41);
+  border-inline-start-color: rgb(19, 102, 19);
+  cursor: pointer;
+}
+.editTest:hover::after {
+  content: "Add Note";
+  position: absolute;
+  font-size: small;
+  top: 100%;
+  color: black;
+  left: 0;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* M  E  D  I  A     Q  U  R  I  E  S */
+@media (min-width: 900px) and (max-width: 1150px) {
+  .editTest {
+    margin: -4% 13% 0 79%;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .main-cards-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .test-heading div p {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Tilt Warp", cursive;
+    letter-spacing: 0.5rem;
+  }
+  .test-heading div div {
+    height: 60%;
+  }
+  .test-heading div img {
+    width: 80%;
+  }
+  .editTest {
+    margin: -6% 12% 0 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-cards-div {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+  .test-card .imgDiv {
+    width: 20%;
+    margin: -10% 10% 10% 70%;
+  }
+  .test-heading div p {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Tilt Warp", cursive;
+    letter-spacing: 0.5rem;
+  }
+  .test-heading div div {
+    height: 60%;
+  }
+  .test-heading div img {
+    width: 80%;
+  }
+  .editTest {
+    margin: -6% 11% 0 79%;
+  }
+  .single-test-body {
+    width: 80%;
+  }
+  .single-test-notes {
+    width: 80%;
+  }
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .editTest {
+    margin: -6% 12% 0 78%;
+    font-size: x-large;
+    background-color: #ccc;
+    border: solid #bbb8b8 0.2rem;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 100%;
+  }
+  .mainDivTest {
+    padding-bottom: 2rem;
+    height: auto;
+  }
+  .single-test-loading {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .single-test-loading img {
+    width: 100%;
+  }
+}
